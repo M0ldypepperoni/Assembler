@@ -12,7 +12,7 @@
 #include <ctype.h>
 #include <time.h>
 
-char ASM_FILE_NAME[ ] = "startPart1.asm";
+char ASM_FILE_NAME[ ] = "appart1.asm";
 
 #define MAX 150			// strlen of simulators memory can be changed
 #define COL 9			// number of columns for output
@@ -75,26 +75,6 @@ void printMemoryDumpHex( );				   // Prints memory in hexedecimal
 int isDigitOrNeg( char letter );            // is a charater the start of a positive or negative number
 void registerStartValues( );              // gives all registers & flag random values to start
 
-/************************registerStarValues********************************
-* gives all registers and the flag random values to start the code.
-*    This is realistic because unless the machine is just been turned on
-*    the values will be unknown.
-*    The values are upto 4 digits. The formula for AX = (high - low + 1)+low;
-*			high = 9999
-*			low = 2
-*parameters: none
-*return value: none
---------------------------------------------------------------------*/
-void registerStartValues( )
-{
-	srand( 0 );  //starts random number generator, will always have the same values, best for debugging
-	//srand(time(NULL) ); //starts random generator with a the time, will appear more random
-	regis.AX = rand( ) % (9999 - 2 + 1) + 2;
-	regis.BX = rand( ) % 9998 +2;
-	regis.CX = rand( ) % 9998 + 2;
-	regis.DX = rand( ) % 9998 + 2;
-	regis.flag = rand( ) % 9998 + 2;
-} //end of registerStartValues
 
 //***needs work ***
 //no comment needed for function main, its comment is the header for the project

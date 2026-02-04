@@ -19,9 +19,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <None Include="appart1.asm">
       <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
+=======
+>>>>>>> 14a0aab93bd44b0423b44e997a8cfa917b679186
 </Project>

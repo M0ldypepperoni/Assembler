@@ -12,7 +12,11 @@
 #include <ctype.h>
 #include <time.h>
 
+<<<<<<< HEAD
 char ASM_FILE_NAME[] = "appart1.asm";  //the name of the assembly code file
+=======
+char ASM_FILE_NAME[ ] = "appart1.asm";
+>>>>>>> 14a0aab93bd44b0423b44e997a8cfa917b679186
 
 #define MAX 150			// strlen of simulators memory can be changed
 #define COL 9			// number of columns for output
@@ -75,6 +79,10 @@ void printMemoryDumpHex( );				   // Prints memory in hexedecimal
 int isDigitOrNeg( char letter );            // is a charater the start of a positive or negative number
 void registerStartValues( );              // gives all registers & flag random values to start
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 14a0aab93bd44b0423b44e997a8cfa917b679186
 //***needs work ***
 //no comment needed for function main, its comment is the header for the project
 int main( )

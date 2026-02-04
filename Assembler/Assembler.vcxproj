@@ -125,9 +125,12 @@
   <ItemGroup>
     <ClCompile Include="startAssembler.c" />
   </ItemGroup>
+<<<<<<< HEAD
   <ItemGroup>
     <None Include="appart1.asm" />
   </ItemGroup>
+=======
+>>>>>>> 14a0aab93bd44b0423b44e997a8cfa917b679186
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
